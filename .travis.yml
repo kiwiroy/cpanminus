@@ -8,7 +8,6 @@ before_install:
   - perlbrew install-cpanm -f
 install:
   - cpanm -nq --installdeps --with-develop --with-recommends --with-suggests .
-  - cpanm ExtUtils::MakeMaker
 script:
   - prove -lr xt -j9
 sudo: false
