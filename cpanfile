@@ -41,6 +41,7 @@ on develop => sub {
     recommends 'Archive::Tar';
     recommends 'Archive::Zip';
     recommends 'Compress::Zlib';
+    recommends 'ExtUtils::MakeMaker', '6.59';
     recommends 'File::HomeDir';
     recommends 'Module::Signature';
 };
