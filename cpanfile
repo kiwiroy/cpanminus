@@ -14,6 +14,7 @@ on develop => sub {
     requires 'CPAN::Meta::YAML';
     requires 'Digest::SHA';
     requires 'Exporter', '5.63';
+    requires 'ExtUtils::MakeMaker', '>= 6.59';
     requires 'File::Temp';
     requires 'File::pushd';
     requires 'Getopt::Long';
@@ -41,7 +42,6 @@ on develop => sub {
     recommends 'Archive::Tar';
     recommends 'Archive::Zip';
     recommends 'Compress::Zlib';
-    recommends 'ExtUtils::MakeMaker', '6.59';
     recommends 'File::HomeDir';
     recommends 'Module::Signature';
 };
