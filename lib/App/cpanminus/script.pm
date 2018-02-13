@@ -987,7 +987,7 @@ sub upgrade_toolchain {
     # EU::Install 1.46 for local::lib
     my $reqs = CPAN::Meta::Requirements->from_string_hash({
         'Module::Build' => '0.38',
-        'ExtUtils::MakeMaker' => '6.58',
+        'ExtUtils::MakeMaker' => '6.59',
         'ExtUtils::Install' => '1.46',
     });
 
