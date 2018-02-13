@@ -23,7 +23,7 @@ use App::cpanminus::script;
 
 require ExtUtils::MakeMaker;
 warn $INC{'ExtUtils/MakeMaker.pm'};
-
+warn $ExtUtils::MakeMaker::VERSION;
 unless (caller) {
     my $app = App::cpanminus::script->new;
     $app->parse_options(@ARGV);

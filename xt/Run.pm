@@ -14,6 +14,7 @@ $ENV{PERL_CPANM_HOME} = tempdir(CLEANUP => 1);
 sub run_L {
   require ExtUtils::MakeMaker;
   warn $INC{'ExtUtils/MakeMaker.pm'};
+  warn $ExtUtils::MakeMaker::VERSION;
   warn $executable;
     run("-L", "$ENV{PERL_CPANM_HOME}/perl5", @_);
 }
