@@ -7,7 +7,7 @@ perl:
 before_install:
   - perlbrew install-cpanm -f
 install:
-  - cpanm --configure-args=INSTALLDIRS=perl ExtUtils::MakeMaker@7.02
+  - cpanm --configure-args=INSTALLDIRS=perl ExtUtils::MakeMaker~">=7.02"
   - cpanm -nq --installdeps --with-develop --with-recommends --with-suggests .
   - perl -MExtUtils::MakeMaker -le 'print $INC{"ExtUtils/MakeMaker.pm"}; print $ExtUtils::MakeMaker::VERSION'
   - perl -Mlib -le 'BEGIN{ no lib grep { m{/site_perl/} } @INC; } use ExtUtils::MakeMaker; print $ExtUtils::MakeMaker::VERSION; print $INC{"ExtUtils/MakeMaker.pm"}'
