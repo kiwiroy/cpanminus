@@ -14,7 +14,6 @@ on develop => sub {
     requires 'CPAN::Meta::YAML';
     requires 'Digest::SHA';
     requires 'Exporter', '5.63';
-    requires 'ExtUtils::MakeMaker', '>= 6.59';
     requires 'File::Temp';
     requires 'File::pushd';
     requires 'Getopt::Long';
