@@ -21,6 +21,8 @@ use FindBin qw($Bin);                        # For dev -- Auto-removed
 use lib "$Bin/../lib", "$Bin/../fatlib"; # For dev -- Auto-removed
 use App::cpanminus::script;
 
+require ExtUtils::MakeMaker;
+warn $INC{'ExtUtils/MakeMaker.pm'};
 
 unless (caller) {
     my $app = App::cpanminus::script->new;
