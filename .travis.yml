@@ -16,3 +16,4 @@ install:
 script:
   - prove -lr xt -j9
 sudo: false
+filter_secrets: false
